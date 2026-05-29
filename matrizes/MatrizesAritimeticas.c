@@ -62,7 +62,7 @@ int main() {
     for(int i = 0; i < 2; i++){
         for(int j = 0; j < 2; j++){
             for(int j = 0; j < 2; j++){
-            matriz_4[i][j] = (matriz_1[i][j] * matriz_2[i][j]) + ( matriz_1[i][j] + matriz_2[i][j]);
+            matriz_4[i][j] += matriz_1[i][k] * matriz_2[k][j];
             }
         }
         printf("\n");
